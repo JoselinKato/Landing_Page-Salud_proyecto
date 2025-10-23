@@ -1,15 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "../styles/Principal.css";
 import Navbar from "../components/navbar";
-import CardReusable from "../components/CardReusable";
-import { 
-  FaLanguage, 
-  FaMapMarkerAlt, 
-  FaExclamationTriangle, 
-  FaMobileAlt, 
-  FaGlobe, 
-  FaRegLightbulb, 
-  FaUsers 
+import CardReusable from "../components/cardReusable";
+import CardNumerada from "../components/carNumerada";
+import {
+  FaLanguage,
+  FaMapMarkerAlt,
+  FaExclamationTriangle,
+  FaMobileAlt,
+  FaGlobe,
+  FaRegLightbulb,
+  FaUsers,
 } from "react-icons/fa";
 function PrincipalPage() {
   return (
@@ -48,17 +49,56 @@ function PrincipalPage() {
               buscar ayuda médica es el más difícil: la comunicación.
             </h4>
           </Row>
-          <Row>
+          <Row style={{ margin: "2%" }}>
             <Col>
               <CardReusable
-                title="Salud Cardiaca"
-                text="Cuida tu corazón con nuestros consejos"
+                title="Barreras de lenguaje y cultura"
+                text="Las comunidades usan expresiones locales como calor de cuerpo o dolor de huesos que no son entendidas por los sistemas médicos formales."
                 IconComponent={FaLanguage}
-                buttonText="Ver más"
-                onButtonClick={() => alert("Card 1")}
               />
             </Col>
-            <Col></Col>
+            <Col>
+              <CardReusable
+                title="Acceso físico limitado"
+                text="Llegar a un centro de salud puede significar horas de viaje con transporte limitado y costoso, desincentivando la búsqueda de ayuda temprana."
+                IconComponent={FaMapMarkerAlt}
+              />
+            </Col>
+            <Col>
+              <CardReusable
+                title="Detección tardía de riesgos"
+                text="Enfermedades como dengue, zika y chikungunya se diagnostican tarde, aumentando 
+                complicaciones y propagación en la comunidad."
+                IconComponent={FaExclamationTriangle}
+              />
+            </Col>
+          </Row>
+        </div>
+      </div>
+
+      <div className="parte3">
+        <div style={{ padding: "5%" }}>
+          <Row>
+            <h1>Un ecosistema digital completo</h1>
+          </Row>
+          <Row style={{ color: "var(--color-gris_oscuro)" }}>
+            <h4>
+              Dos plataformas que trabajan juntas: una aplicación móvil para la
+              comunidad y un panel web para nuestros administradores.
+            </h4>
+          </Row>
+          <Row style={{ margin: "2%" }}>
+            <Col>
+              <Row>
+                <CardNumerada
+                  number={1}
+                  title="Describe con tus Propias Palabras"
+                  text="Interfaz conversacional donde puedes escribir o dictar cómo te sientes usando el lenguaje de todos los días."
+                />
+              </Row>
+              <Row></Row>
+              <Row></Row>
+            </Col>
             <Col></Col>
           </Row>
         </div>
