@@ -1,5 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar';
 import { Row, Col } from 'react-bootstrap';
+import '../styles/navbar.css'
 
 function NavbarPrin() {
   return (
