@@ -10,16 +10,16 @@ function NavbarPrin() {
           <Navbar.Brand href="#home">
             <Row>
                 <Col>
-                 <img
+                 {/* <img
               alt=""
               src="/img/logo.svg"
               width="30"
               height="30"
               className="d-inline-block align-top"
-            />{' '}
+            />{' '} */}
                 </Col>
                 <Col>
-                 <h2 style={{color:"white"}}>SIMEC</h2>
+                 <h2 style={{color:"white"}}>JuntosXSalud</h2>
                 </Col>
             </Row>
           </Navbar.Brand>
