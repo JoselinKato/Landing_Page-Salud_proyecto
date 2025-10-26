@@ -2,10 +2,9 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  background-color: var(--color-Verde_fondo);
+  background-color: var(--color-fondo);
+  padding: 1rem;
   border-radius: 1rem;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .numero-circulo {
@@ -14,21 +13,32 @@
   border-radius: 50%;
   background-color: var(--color-verde_letra);
   color: white;
-  font-weight: bold;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  font-weight: bold;
   font-size: 1.2rem;
 }
 
+.icono-cuadro {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: var(--color-verde_letra);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+}
+
 .contenido h3 {
-  color: var(--color-verde_subtitulo);
+  color: var(--color-verde_letra);
   margin: 0;
   font-size: 1.1rem;
 }
 
 .contenido p {
-  margin: 0.3rem 0 0;
   color: var(--color-gris_oscuro);
-  font-size: 0.95rem;
+  margin: 0.2rem 0 0 0;
 }
