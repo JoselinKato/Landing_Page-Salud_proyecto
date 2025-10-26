@@ -1,34 +1,215 @@
-.rowPadre, .rowPadre2 {
-    text-align: center;
-    padding: 0;
-    justify-content: center;
+.hero-section {
+  position: relative;
+  background-image: url("../assets/img/IMG_1792.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5% 0;
 }
-.rowPadre{
-    margin-top: 3%;
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
-.colhijo1, .colhijo2 {
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+
+.hero-section > .row {
+  position: relative;
+  z-index: 2;
+}
+
+.rowPadre,
+.rowPadre2 {
+  text-align: center;
   padding: 0;
+  justify-content: center;
 }
+.rowPadre {
+  margin-top: 0;
+}
+
+.rowPadre h1,
+.rowPadre2 h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.hero-section .rowPadre h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.colhijo1 h1 {
+  color: var(--color-negro, #1e1e1e);
+}
+
+.hero-section .colhijo1 h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .colhijo2 {
   margin-left: 1%;
+}
+
+.colhijo2 h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
   color: var(--color-verde_letra);
 }
 
-.rowPadre3{
-    text-align: center;
-    color: var(--color-gris_oscuro);
-    margin: 5%;
+.hero-section .colhijo2 h1 {
+  color: var(--color-verde_letra);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.parte2{
-    background-color: var(--color-verde_fondo);
-    text-align: center;
-    
+.rowPadre3 {
+  text-align: center;
+  color: var(--color-gris_oscuro);
+  margin: 2rem 5% 5% 5%;
+  padding: 0 10%;
 }
 
-.parte3{
-    text-align: center;
+.hero-section .rowPadre3 {
+  color: #ffffff;
+  opacity: 0.9;
+  margin-top: 2rem;
+}
+
+.rowPadre3 h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.parte2 {
+  background-color: var(--color-verde_fondo);
+  text-align: center;
+}
+
+.card-header-row {
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.col-plataforma-web {
+  background-color: var(--color-verde_subtitulo);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  color: white;
+  height: 100%;
+}
+
+.col-plataforma-web .card-icon {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  transition: none;
+}
+
+.col-plataforma-web .card-icon:hover {
+  transform: none;
+}
+
+.col-plataforma-web .card-icon .icono-circulo {
+  background-color: white;
+  color: var(--color-verde_subtitulo);
+}
+
+.col-plataforma-web .card-icon .contenido h3 {
+  color: white;
+}
+
+.col-plataforma-web .card-icon .contenido p {
+  color: var(--color-gris_claro);
+  opacity: 0.9;
+}
+
+.parte4 {
+  background-color: var(--color-gris_claro);
+  text-align: center;
+}
+
+.impacto-section {
+  position: relative;
+  background-image: url("../assets/img/IMG_1795.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: transparent;
+}
+
+.impacto-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.impacto-section [class*="col-"],
+.impacto-section .row {
+  position: relative;
+  z-index: 2;
+}
+
+.parte4 h1 {
+  color: var(--color-verde_subtitulo);
+  margin-bottom: 1rem;
+}
+
+.impacto-section h1 {
+  color: #ffffff;
+}
+
+.parte4 h4 {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.impacto-section h4 {
+  color: var(--color-gris_claro);
+  opacity: 0.9;
+}
+
+.card-reusable-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.card-reusable-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.BordeCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid var(--color-gris_claro);
+  border-left: 6px solid var(--color-verde_letra);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 2%;
+  background-color: #fff;
+}
+
+.BordeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-left-color: var(--color-verde_boton);
 }
