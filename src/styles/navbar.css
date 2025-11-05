@@ -1,3 +1,22 @@
 .divPadre {
     background-color: var(--color-verde_boton)!important;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 10%;
+    border-radius: 1%;
+    scroll-behavior: smooth; 
+}
+.scroll-items {
+  display: inline-flex;      
+  gap: 20px;
+  padding: 10px;
+}
+
+.scroll-items button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 100%;
+  margin: 10%;
 }
