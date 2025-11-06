@@ -1,7 +1,7 @@
 .footer-principal {
   background-color: var(--color-negro, #1e1e1e);
   color: var(--color-gris_claro);
-  padding: 3rem 1rem;
+  padding: 1%;
 }
 
 .footer-copyright {

@@ -103,7 +103,7 @@
 }
 
 .col-plataforma-web {
-  background-color: var(--color-verde_subtitulo);
+  background-color: var(--color-verde_boton);
   border-radius: 8px;
   padding: 2.5rem 2rem;
   color: white;

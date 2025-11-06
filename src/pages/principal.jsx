@@ -20,10 +20,10 @@ import {
 
 function PrincipalPage() {
   return (
-    <div>
+    <>
       <Navbar />
-
-      <div className="hero-section">
+    <div className="main-content">
+      <div className="hero-section" >
         <Row className="g-0 rowPadre">
           <Col xs="12" className="colhijo">
             <h1>Conectando comunidades con</h1>
@@ -47,7 +47,7 @@ function PrincipalPage() {
         </Row>
       </div>
 
-      <div className="parte2">
+      <div id="servicios" className="parte2">
         <div style={{ padding: "5%" }}>
           <Row>
             <h1>Una brecha entre la comunidad y la salud</h1>
@@ -90,7 +90,7 @@ function PrincipalPage() {
         </div>
       </div>
 
-      <div className="parte3">
+      <div id="plataforma" className="parte3">
         <div style={{ padding: "5%" }}>
           <Row>
             <h1>Un ecosistema digital completo</h1>
@@ -168,7 +168,7 @@ function PrincipalPage() {
         </div>
       </div>
 
-      <div className="parte4 impacto-section">
+      <div id="impacto" className="parte4 impacto-section">
         <div style={{ padding: "5%" }}>
           <Row className="justify-content-center">
             <Col xs={12}>
@@ -207,6 +207,7 @@ function PrincipalPage() {
 
       <Footer />
     </div>
+    </>
   );
 }
 export default PrincipalPage;
